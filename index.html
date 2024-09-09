@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eskimo Villages Newsletter</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px 0;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            border-spacing: 0;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: #00BFFF; /* Frostbite Blue */
+            padding: 40px 0 20px;
+            margin: 0;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3.0rem;
+        }
+
+        p {
+            color: #060606;
+            padding: 0 20px;
+            margin: 0 0 20px 0;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .hero img {
+            width: calc(100% - 40px);
+            height: auto;
+            max-height: 300px;
+            display: block;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-text {
+            padding: 20px;
+            color: #050505;
+            font-size: 16px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: #00BFFF; /* Frostbite Blue */
+            margin: 10px 20px;
+            width: calc(100% - 40px);
+        }
+
+        .row {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .row td {
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        /* Updated Row Images */
+        .row img {
+            width: 15.0rem;
+            height: 10.5rem; /* Fixed height for uniformity */
+            border-radius: .5rem;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            display: block;
+        }
+
+        .row-text h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #00BFFF; /* Frostbite Blue */
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .row-text p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 0 10px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .read-more {
+    background-color: #00BFFF; /* Frostbite Blue */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: block; /* Makes it behave like a block element */
+    margin: 10px auto; /* Centers the button */
+    text-align: center; /* Centers the text inside the button */
+    width: fit-content; /* Ensures the button's width fits the text */
+}
+
+
+        .social-media {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .social-media h2 {
+            font-size: 1.8rem;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 23px;
+            vertical-align: middle;
+        }
+
+        /* Updated Image Grid */
+        .image-grid {
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .image-grid td {
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-grid a img {
+            width: 20.5rem; /* Set width to 10.5rem */
+            height: 15.5rem; /* Adjusted height to 7.5rem for better proportions */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 0.5rem; /* Border-radius using rem units */
+            display: block; /* Ensures block-level behavior */
+            margin: 0 auto; /* Centers the image */
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 15px;
+            color: #555555;
+            background-color: #ffffff;
+        }
+
+        .footer a {
+            color: #00BFFF; /* Frostbite Blue */
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        @media screen and (max-width: 600px) {
+            .row td {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .row img {
+                width: 100%;
+                height: auto; /* Let height adjust for mobile */
+                margin-bottom: 10px;
+            }
+
+            .image-grid td {
+                display: block;
+                width: 100%;
+            }
+
+            .image-grid a img {
+                height: 80px; /* Adjust as needed for mobile */
+                margin-bottom: 20px;
+            }
+
+            .read-more {
+                padding: 10px 15px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .row-text h3 {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .row-text p {
+                font-size: 13px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <h1>Eskimo Villages</h1>
+                <p>Winter Vacation Reviews</p>
+            </td>
+        </tr>
+
+        <!-- Hero Section -->
+        <tr>
+            <td class="hero">
+                <img src="img/hero1.jpg" alt="Hero Image">
+            </td>
+        </tr>
+        <!-- End of Hero Section -->
+
+        <!-- Hero Text Section -->
+        <tr>
+            <td class="hero-text">
+                Escape to a winter wonderland ❄️ and experience the magic of a snowy getaway! From cozy cabins to thrilling slopes, let our vacation newsletter guide you to your dream winter escape. 🏔️☕
+            </td>
+        </tr>
+        <!-- Divider after Hero Text -->
+        <tr>
+            <td>
+                <div class="divider"></div>
+            </td>
+        </tr>
+        <!-- End of Hero Text Section -->
+
+        <!-- Row 1 -->
+        <tr>
+            <td>
+                <table class="row">
+                    <tr>
+                        <td><img src="img/Aspen.jpg" alt="Aspen Colorado"></td>
+                        <td class="row-text">
+                            <h3>Aspen Colorado</h3>
+                            <p>Discover the breathtaking beauty of Aspen, Colorado, where luxury meets adventure in the heart of the Rocky Mountains! 🏞️❄️</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="divider"></div>
+            </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td>
+                <table class="row">
+                    <tr>
+                        <td><img src="img/laketahoe.jpg" alt="Lake Tahoe"></td>
+                        <td class="row-text">
+                            <h3>Lake Tahoe</h3>
+                            <p>Immerse yourself in the stunning landscapes of Lake Tahoe, where crystal-clear waters meet majestic mountains for the ultimate all-season getaway! 🌊🏞️</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="divider"></div>
+            </td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td>
+                <table class="row">
+                    <tr>
+                        <td><img src="img/banff.jpg" alt="Banff"></td>
+                        <td class="row-text">
+                            <h3>Banff</h3>
+                            <p>Explore the awe-inspiring beauty of Banff, where towering peaks and pristine lakes create the perfect alpine adventure in the heart of the Canadian Rockies! 🏔️🍁</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="divider"></div>
+            </td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+            <td>
+                <table class="row">
+                    <tr>
+                        <td><img src="img/alaska.jpg" alt="Fairbanks Alaska"></td>
+                        <td class="row-text">
+                            <h3>Fairbanks Alaska</h3>
+                            <p>Venture to Fairbanks, Alaska, where endless wilderness and the mesmerizing Northern Lights offer a once-in-a-lifetime Arctic experience! ❄️🌌</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="divider"></div>
+            </td>
+        </tr>
+
+        <!-- Social Media Section -->
+        <tr>
+            <td class="social-media">
+                <h2>Follow us on Social Media</h2>
+                <p>Keep up with the latest Arctic travel tips and reviews, and use #EskimoVillages for a chance to be featured on our channels.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="img/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/ig.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/YT.png" alt="YouTube"></a>
+                    <a href="#"><img src="img/X.png" alt="Twitter"></a>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Image Grid Section -->
+        <tr>
+            <td>
+                <table class="image-grid">
+                    <tr>
+                        <td><a href="#"><img src="img/grid1.jpg" alt="Image 1"></a></td>
+                        <td><a href="#"><img src="img/grid2.jpg" alt="Image 2"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><img src="img/grid3.jpg" alt="Image 3"></a></td>
+                        <td><a href="#"><img src="img/grid4.jpg" alt="Image 4"></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Footer Section -->
+        <tr>
+            <td class="footer">
+                <p>We value your feedback! Feel free to email us at <a href="mailto:feedback@EskimoVillages.com">feedback@EskimoVillages.com</a></p>
+                <p>Copyright © 4 Eskimo Villages, All rights reserved.</p>
+                <p>Want to change how you receive these emails?<br>
+                    You can <a href="#">update your preferences</a> or <a href="#">unsubscribe</a>.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+
